@@ -86,13 +86,13 @@ app.use(express.static('src/public'));
 const indexRoute = require('./src/routes/index.js');
 const postsRoute = require('./src/routes/posts.js');
 const userRoute = require('./src/routes/user.js');
-const adminRoute = require('./src/routes/admin.js');
+//const adminRoute = require('./src/routes/admin.js');
 const themeRoute = require('./src/routes/theme.js');
 
 app.use('/', indexRoute);
 app.use('/posts', postsRoute);
 app.use('/user', userRoute);
-app.use('/admin', adminRoute);
+//app.use('/admin', adminRoute);
 app.use('/css', themeRoute);
 
 /* VIEW ENGINE AND FOLDER */
